@@ -1,3 +1,3 @@
 # R-Analysis
 
-The RScript file is here:  [RScript file](.\Challenge\MechaCarChallenge.R)
+The RScript file is here:  [RScript file](\Challenge\MechaCarChallenge.R)
