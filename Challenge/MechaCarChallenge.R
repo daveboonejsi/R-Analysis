@@ -1,0 +1,10 @@
+MachaCar_table <- read.csv(file='MachaCar_mpg.csv',check.names=F,stringsAsFactors = F)
+View(MachaCar_table)
+lm(mpg ~ vl + vw + sa + gc + AWD,data=MachaCar_table) #generate multiple linear regression model
+summary(lm(mpg ~ vl + vw + sa + gc + AWD,data=MachaCar_table))
+SusCoil_table <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFactors = F)
+View(SusCoil_table)
+mean(Suscoil_table$PSI)
+var(Suscoil_table$PSI)
+sd(Suscoil_table$PSI)
+t.test(SusCoil_table$PSI, y = NULL, alternative = c("two.sided"),mu = 1500, paired = FALSE, var.equal = FALSE, conf.level = 0.95)

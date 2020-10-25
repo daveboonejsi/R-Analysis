@@ -1,0 +1,55 @@
+Multiple Linear Regression model 
+Outcome variable:  miles per gallon (mpg)
+Predictors:  Vehicle length (vl), vehicle weight (vw), spoiler angle (sa), ground clearance (gc), all wheel drive (AWD)
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-19.4701  -4.4994  -0.0692   5.4433  18.5849 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -1.040e+02  1.585e+01  -6.559 5.08e-08 ***
+vl           6.267e+00  6.553e-01   9.563 2.60e-12 ***
+vw           1.245e-03  6.890e-04   1.807   0.0776 .  
+sa           6.877e-02  6.653e-02   1.034   0.3069    
+gc           3.546e+00  5.412e-01   6.551 5.21e-08 ***
+AWD         -3.411e+00  2.535e+00  -1.346   0.1852    
+---
+Signif. codes:  
+0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 8.774 on 44 degrees of freedom
+Multiple R-squared:  0.7149,	Adjusted R-squared:  0.6825 
+F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
+
+Conclusion:
+Vehicle length and ground clearance are significant predictors.  The Multiple R-squared (0.7149) indicates that the model fits the data well.
+
+
+Suspension Coils
+Summary table for Pounds per Square Inch (PSI):
+Mean = 1499.53
+Median = 1499.75
+Variance = 76.24
+Standard Deviation = 8.73
+
+Design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per inch.  Does the current manufacturing data meet this design specification?  It does, since the variance is 76.24 and therefore does not exceed the limit of 100 pounds per square inch.
+
+The one-sample t-test is used to assert if there is a statistical difference between the means of a sample dataset and hypothesized, potential population dataset. In other words, a one-sample t-test is used to test the following hypotheses:
+* H0 : There is no statistical difference between the observed sample mean and its presumed population mean.
+* Ha : There is a statistical difference between the observed sample mean and its presumed population mean.
+
+One sample T-test
+
+
+data:  SusCoil_table$PSI
+t = -0.65784, df = 149, p-value = 0.5117
+alternative hypothesis: true mean is not equal to 1500
+95 percent confidence interval:
+ 1498.122 1500.940
+sample estimates:
+mean of x 
+ 1499.531
+
+The p-value is not significant so do not reject the null hypothesis that the sample mean is not different than the population value.
+
+
