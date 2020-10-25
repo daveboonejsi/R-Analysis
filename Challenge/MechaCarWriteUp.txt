@@ -53,3 +53,12 @@ mean of x
 The p-value is not significant so do not reject the null hypothesis that the sample mean is not different than the population value.
 
 
+Design Your Own Study:
+
+Devise a study to test how our cars can outperform the competition.
+
+I would look at top speed to show how our cars are faster (more performant).
+
+I would calculate the difference between two sample means (two-sample t-test) using average speed of a sample our our cars and and a sample their cars.  Tne null hypothesis 
+is that there is no difference in top speed of the two cars.  The alternative hypthesis is that the means are different. We would test the significance of the test at
+the p=0.05 level.
